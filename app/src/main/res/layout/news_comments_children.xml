@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--作者头像MaterialCardView-->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp">
+        <!--        评论者头像ImageView-->
+        <ImageView
+            android:id="@+id/comments_person_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/default_avatar" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--    评论者名字TextView-->
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:text="用户名"
+        android:textColor="@color/common_text_black"
+        android:textSize="16sp" />
+    <!--评论时间TextView-->
+    <TextView
+        android:id="@+id/comments_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="23dp"
+        android:text="评论时间"
+        android:textSize="14sp" />
+    <!--    点赞ImageView-->
+    <ImageView
+        android:id="@+id/like_image"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="297dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/like_black" />
+    <!--点赞数TextView-->
+    <TextView
+        android:id="@+id/like_amount_text_below"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="321dp"
+        android:layout_marginTop="3dp"
+        android:text="66"
+        android:textSize="16sp" />
+    <!--用户评论内容TextView-->
+    <TextView
+        android:id="@+id/comments_content_text"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="54dp"
+        android:text="用户输出内容，能说多少俺也不知道看着差不多这样..."
+        android:textColor="@color/common_text_black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

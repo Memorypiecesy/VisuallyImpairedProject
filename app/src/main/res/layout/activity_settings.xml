@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    最上面的"设置"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp">
+
+        <!--    "设置"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:text="设置"
+            android:textColor="@color/common_text_black"
+            android:textSize="24sp" />
+
+        <!--    返回箭头-->
+        <ImageView
+            android:id="@+id/return_back"
+            android:layout_width="14dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+
+    <!--    分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <!--    "账号与安全"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <!--    "账号与安全"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="23dp"
+            android:text="账号与安全"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+<!--        "账号与安全"处的箭头ImageView-->
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginStart="333dp"
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="30dp"/>
+
+    </RelativeLayout>
+
+    <!--    分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "隐私"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <!--    "隐私"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="隐私"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+
+        <!--        "账号与安全"处的箭头ImageView-->
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginStart="333dp"
+            android:src="@drawable/arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="30dp"/>
+
+    </RelativeLayout>
+
+    <!--    "隐私"与"清除缓存"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divider" />
+
+    <!--    "清除缓存"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <!--    "清除缓存"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="清除缓存"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+        <!--    "显示缓存大小"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="106dp"
+            android:text="24MB"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+        <!--    "一键清除"CardView-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="86dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/clear_card_view"
+            app:cardCornerRadius="10dp">
+            <!--    "一键清除"TextView-->
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="一键清除"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <!--    "清除缓存"与"播放与网络设置"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+
+    <!--    "播放与网络设置"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <!--    "播放与网络设置"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="播放与网络设置"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--    "播放与网络设置"与"推送通知"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "推送通知"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp">
+
+        <!--    "推送通知"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text="推送通知"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+        <!--    "推送通知"处的按钮ImageView-->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/button_choose" />
+
+    </RelativeLayout>
+
+    <!--    "推送通知"与"版本检查"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divider" />
+
+    <!--    "版本检查"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp">
+
+        <!--    "版本检查"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="19dp"
+            android:text="版本检查"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--    "版本检查"与"关于闻世"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "关于闻世"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+        <!--    "关于闻世"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:text="关于闻世"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--    "关于闻世"与"用户反馈"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "用户反馈"的RelativeLayout布局-->
+    <RelativeLayout
+        android:id="@+id/settings_user_feedback_relative"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <!--    "用户反馈"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:text="用户反馈"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--    "用户反馈"与"退出登录"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divider" />
+
+
+</LinearLayout>

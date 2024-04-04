@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--手机号码TextView-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="187dp"
+        android:text="123****8915"
+        android:textColor="@color/common_text_black"
+        android:textSize="42dp" />
+
+    <!--    "本机号码一键登录"的CardView-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/login_cardView"
+        android:layout_width="296dp"
+        android:layout_height="53dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="345dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp">
+
+        <!--    本机号码一键登录的RelativeLayout-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--        "本机号码一键登录"TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="本机号码一键登录"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+<!--勾选同意条款的圈圈ImageView-->
+    <ImageView
+        android:id="@+id/login_circle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="425dp"
+        android:src="@drawable/login_circle_selected" />
+    <!--"中国移动提供认证服务"ImageView-->
+    <ImageView
+        android:src="@drawable/certification_icon"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="247dp"
+        android:layout_width="13dp"
+        android:layout_height="16dp"/>
+<!--"中国移动提供认证服务"TextView-->
+    <TextView
+        android:textColor="@color/text_search_grey"
+        android:textSize="42px"
+        android:layout_marginTop="246dp"
+        android:layout_marginStart="120dp"
+        android:text="中国移动提供认证服务"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--微信图标-->
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="728dp"
+        android:layout_marginBottom="29dp"
+        android:src="@drawable/wechat" />
+
+    <!--QQ图标-->
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginBottom="29dp"
+        android:src="@drawable/qq_icon" />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="423dp"
+        android:text="我已阅读并同意《服务条款》和《隐私协议》\n以及《中国移动认证服务协议》"
+        android:textSize="12sp" />
+
+</RelativeLayout>

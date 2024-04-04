@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.CameraActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--        拍照预览画面显示-->
+            <TextureView
+                android:id="@+id/camera_texture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--    "语音识别中"的RelativeLayout-->
+            <RelativeLayout
+                android:id="@+id/voice_recognition"
+                android:layout_width="162dp"
+                android:layout_height="162dp"
+                android:layout_marginStart="99dp"
+                android:layout_marginTop="266dp"
+                android:visibility="gone">
+                <!--    "语音识别中"的黑色框框背景-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/voice_recognition_background" />
+                <!--    "语音识别中"的圆形识别进度条-->
+                <ProgressBar
+                    android:layout_width="61dp"
+                    android:layout_height="61dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="35dp"
+                    android:indeterminateTint="@color/white" />
+                <!--        "语音识别中"TextView-->
+                <TextView
+                    android:layout_width="93dp"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="118dp"
+                    android:text="图像识别中"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <!--    右上角"识别历史"的CardView-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/camera_history_cardView"
+                android:layout_width="128dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="229dp"
+                android:layout_marginTop="4dp"
+                app:cardBackgroundColor="@color/pure_black"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="0dp">
+
+                <!--    识别历史的RelativeLayout-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--                识别历史的ImageView-->
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="11dp"
+                        android:src="@drawable/camera_page_clock" />
+                    <!--        识别历史TextView-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="46dp"
+                        android:text="识别历史"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <!--    底下的根布局RelativeLayout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_gravity="bottom"
+        android:background="@color/pure_black">
+        <!--    返回ImageView的可点击范围-->
+        <RelativeLayout
+            android:id="@+id/return_relative"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="29dp">
+
+            <!--    左下角"返回"的CardView-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_centerInParent="true"
+                app:cardBackgroundColor="@color/common_text_black"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="0dp">
+
+                <!--    返回RelativeLayout-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="返回按钮">
+                    <!--                    返回ImageView-->
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/return_arrow" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+        <!--        "返回"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="94dp"
+            android:contentDescription="这里是返回文字，若想返回上一页面请点击上方的返回按钮"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <!--    中间按钮的可点击范围-->
+        <RelativeLayout
+            android:id="@+id/camera_button_relative"
+            android:layout_width="87dp"
+            android:layout_height="87dp"
+            android:layout_centerInParent="true">
+            <!--点击拍照的ImageView-->
+            <ImageView
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="点击拍照按钮"
+                android:src="@drawable/camera_page_button" />
+
+        </RelativeLayout>
+        <!--    导入图片ImageView的可点击范围-->
+        <RelativeLayout
+            android:id="@+id/import_image_relative"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="255dp"
+            android:layout_marginTop="29dp">
+
+            <!--    右下角"导入图片"的CardView-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_centerInParent="true"
+                app:cardBackgroundColor="@color/common_text_black"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="0dp">
+
+                <!--    导入图片RelativeLayout-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="导入图片按钮">
+                    <!--                    导入图片ImageView-->
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/camera_page_photo" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+        <!--        "导入图片"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="261dp"
+            android:layout_marginTop="94dp"
+            android:contentDescription="这里是导入图片文字，若想导入图片请点击上方的导入图片按钮"
+            android:text="导入图片"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

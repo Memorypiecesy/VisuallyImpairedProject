@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VisuallyImpairedProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    识别结果页"收藏成功"TextView中的文字-->
+    <string name="collect_success_text">收藏成功\n 可在"我的收藏"中查看</string>
+</resources>

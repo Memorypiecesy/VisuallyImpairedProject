@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    最上面的"隐私"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp">
+
+        <!--    "隐私"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:text="隐私"
+            android:textColor="@color/common_text_black"
+            android:textSize="24sp" />
+
+        <!--    返回箭头-->
+        <ImageView
+            android:id="@+id/return_back"
+            android:layout_width="14dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+
+    <!--    分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <!--    "账号与安全"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <!--    "账号与安全"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="23dp"
+            android:text="账号与安全"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--    分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "隐私条款"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp">
+
+        <!--    "隐私条款"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="隐私条款"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <!--    "隐私条款"与"应用权限说明"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "应用权限说明"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <!--    "应用权限说明"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="应用权限说明"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <!--    "应用权限说明"与"个人信息收集清单"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+
+    <!--    "个人信息收集清单"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <!--    "个人信息收集清单"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="个人信息收集清单"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <!--    "个人信息收集清单"与"第三方信息共享清单"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "第三方信息共享清单"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <!--    "第三方信息共享清单"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="第三方信息共享清单"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <!--    "第三方信息共享清单"与"常见问题"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:background="@color/divider" />
+
+    <!--    "版本检查"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp">
+
+        <!--    "版本检查"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="19dp"
+            android:text="版本检查"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--    "版本检查"与"关于闻世"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "关于闻世"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+        <!--    "关于闻世"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:text="关于闻世"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--    "关于闻世"与"用户反馈"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "用户反馈"的RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <!--    "用户反馈"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:text="用户反馈"
+            android:textColor="@color/common_text_black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--    "用户反馈"与"退出登录"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divider" />
+
+
+</LinearLayout>

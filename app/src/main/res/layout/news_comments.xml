@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/relative_above"
+        android:layout_width="match_parent"
+        android:layout_height="41dp">
+        <!--    评论数TextView-->
+        <TextView
+            android:id="@+id/comments_count_total"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp"
+            android:text="评论111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--    点赞数TextView-->
+        <TextView
+            android:id="@+id/like_amount_text_above"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp"
+            android:text="点赞数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_above">
+
+        <!--作者头像MaterialCardView-->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp">
+            <!--        评论者头像ImageView-->
+            <ImageView
+                android:contentDescription="该评论的人的头像"
+                android:id="@+id/comments_person_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_avatar" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--    评论者名字TextView-->
+        <TextView
+            android:id="@+id/username_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="2dp"
+            android:text="用户名"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+        <!--评论时间TextView-->
+        <TextView
+            android:id="@+id/comments_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="31dp"
+            android:text="评论时间"
+            android:textSize="16sp" />
+        <!--    点赞ImageView-->
+        <ImageView
+            android:id="@+id/like_image"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="303dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/like_black" />
+        <!--点赞数TextView-->
+        <TextView
+            android:id="@+id/like_amount_text_below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="324dp"
+            android:layout_marginTop="6dp"
+            android:text="66"
+            android:textSize="16sp" />
+        <!--用户评论内容TextView-->
+        <TextView
+            android:id="@+id/comments_content_text"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="60dp"
+            android:text="带基地啊及卡打卡机案件嗲极大爱降低爱家家居点击埃德加加丹加寄"
+            android:textColor="@color/common_text_black"
+            android:textSize="16sp" />
+
+        <!--更多回复MaterialCardView-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/comments_reply_card"
+            android:layout_width="126dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/comments_content_text"
+            android:layout_marginStart="68dp"
+            app:cardBackgroundColor="@color/identification_page_circle"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--        回复数目TextView-->
+                <TextView
+                    android:id="@+id/comments_reply_amount_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:text="XX条回复"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp" />
+                <!--            回复数目右边的蓝色箭头ImageView-->
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginStart="73dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/arrow_right_blue" />
+
+            </RelativeLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

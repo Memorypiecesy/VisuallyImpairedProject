@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp">
+
+        <!--    "意见反馈"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="42dp"
+            android:text="意见反馈"
+            android:textColor="@color/common_text_black"
+            android:textSize="24sp" />
+
+        <!--    返回箭头-->
+        <ImageView
+            android:id="@+id/return_back"
+            android:layout_width="14dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+    <!--    "意见反馈"和下面的RecyclerView的分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/divider" />
+    <!--    代表意见反馈框的CardView-->
+    <com.google.android.material.card.MaterialCardView
+        app:strokeColor="@color/blue"
+        android:layout_width="328dp"
+        android:layout_height="274dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:strokeWidth="2dp"
+        app:cardElevation="0dp">
+
+        <!--    意见反馈框的RelativeLayout-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--        意见正文-->
+            <EditText
+                android:id="@+id/feed_back_page_edit"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:hint="提出您的意见吧~"
+                android:maxLines="10"
+                android:textColor="@color/text_search_grey" />
+
+            <!--        意见的字数-->
+            <TextView
+                android:textColor="@color/text_search_grey"
+                android:id="@+id/feed_back_page_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="257dp"
+                android:layout_marginTop="238dp"
+                android:text="0/3000"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--    "提交意见"的CardView-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/feed_back_page_card"
+        android:layout_width="213dp"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="437dp"
+        app:cardBackgroundColor="@color/text_search_grey"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp">
+
+        <!--    提交意见的RelativeLayout-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--        "提交意见"TextView-->
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="提交意见" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+        <!--            "蓝色圆圈"图标-->
+    <ImageView
+        android:id="@+id/record_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginBottom="53dp"
+        android:src="@drawable/circle_blue" />
+    <!--            "语音筛选"图标-->
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="75dp"
+        android:src="@drawable/voice_screening" />
+
+<!--    &lt;!&ndash;    录音时的框框上部分&ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/record_box_top"-->
+<!--        android:layout_width="260dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginBottom="235dp"-->
+<!--        android:src="@drawable/voice_load_top" />-->
+<!--    &lt;!&ndash;    录音时的框框下部分&ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/record_box_bottom"-->
+<!--        android:layout_width="53dp"-->
+<!--        android:layout_height="53dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="153dp"-->
+<!--        android:layout_marginBottom="202dp"-->
+<!--        android:src="@drawable/voice_load_bottom" />-->
+<!--    &lt;!&ndash;    录音框中间的条条&ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/record_box_bar"-->
+<!--        android:layout_width="171dp"-->
+<!--        android:layout_height="5dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="96dp"-->
+<!--        android:layout_marginBottom="282dp"-->
+<!--        android:src="@drawable/voice_load_bar_black" />-->
+<!--    &lt;!&ndash;    "取消"圆圈&ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/cancel_circle"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginBottom="63dp"-->
+<!--        android:src="@drawable/circle_black" />-->
+<!--    &lt;!&ndash;    "取消"TextView&ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/cancel_text"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="53dp"-->
+<!--        android:layout_marginBottom="28dp"-->
+<!--        android:text="取消"-->
+<!--        android:textColor="@color/pure_black"-->
+<!--        android:textSize="17sp" />-->
+<!--    &lt;!&ndash;    "取消"叉叉&ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/cancel_cross"-->
+<!--        android:layout_width="18dp"-->
+<!--        android:layout_height="18dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="61dp"-->
+<!--        android:layout_marginBottom="84dp"-->
+<!--        android:src="@drawable/cancel_cross" />-->
+<!--    &lt;!&ndash;    "语音识别中"的RelativeLayout&ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/voice_recognition"-->
+<!--        android:layout_width="162dp"-->
+<!--        android:layout_height="162dp"-->
+<!--        android:layout_marginStart="99dp"-->
+<!--        android:layout_marginTop="266dp">-->
+<!--        &lt;!&ndash;    "语音识别中"的黑色框框背景&ndash;&gt;-->
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/voice_recognition_background" />-->
+<!--        &lt;!&ndash;    "语音识别中"的圆形识别进度条&ndash;&gt;-->
+<!--        <ProgressBar-->
+<!--            android:layout_width="61dp"-->
+<!--            android:layout_height="61dp"-->
+<!--            android:layout_marginStart="50dp"-->
+<!--            android:layout_marginTop="35dp"-->
+<!--            android:indeterminateTint="@color/white" />-->
+<!--        &lt;!&ndash;        "语音识别中"TextView&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:layout_width="93dp"-->
+<!--            android:layout_height="27dp"-->
+<!--            android:layout_marginStart="34dp"-->
+<!--            android:layout_marginTop="118dp"-->
+<!--            android:text="语音识别中"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="18sp" />-->
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>

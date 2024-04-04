@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="483dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    关闭评论叉叉-->
+    <ImageView
+        android:id="@+id/cross_image"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/cross_black" />
+<!--    "评论"TextView-->
+    <TextView
+        android:textColor="@color/common_text_black"
+        android:textSize="21dp"
+        android:text="评论"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <!--    "发送"TextView-->
+    <TextView
+        android:id="@+id/send_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="9dp"
+        android:text="发送"
+        android:textColor="@color/blue"
+        android:textSize="18dp" />
+<!--    上面的分割线-->
+    <View
+        android:layout_marginTop="46dp"
+        android:background="@color/comments_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+<!--    用户写评论的EditText-->
+    <EditText
+        android:id="@+id/comments_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/white"
+        android:hint="来说说你的看法..." />
+<!--    下面"按住说话"按钮与上面评论内容的分割线-->
+    <View
+        android:layout_marginTop="334dp"
+        android:background="@color/common_text_black"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+<!--    评论的字数-->
+    <TextView
+        android:id="@+id/comments_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="303dp"
+        android:text="0/150"
+        android:textSize="16sp" />
+    <!--    "按住说话"的CardView-->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_centerHorizontal="true"
+        android:layout_width="236dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="433dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp">
+
+        <!--    按住说话的RelativeLayout-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--        "按住说话"TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="按住说话"
+                android:textColor="@color/white"
+                android:textSize="21dp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    最上面的"账号与安全"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp">
+
+        <!--    "账号与安全"TextView-->
+        <TextView
+            android:contentDescription="顶部的账号与安全文字"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:text="账号与安全"
+            android:textColor="@color/common_text_black"
+            android:textSize="24sp" />
+
+        <!--    返回箭头-->
+        <ImageView
+            android:contentDescription="返回箭头"
+            android:id="@+id/return_back"
+            android:layout_width="14dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+
+    <!--    "账号与安全"下面的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <!--    "手机号"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <!--    "手机号"TextView-->
+        <TextView
+            android:contentDescription="手机号文字"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="19dp"
+            android:text="手机号"
+            android:textColor="@color/common_text_black"
+            android:textSize="21dp" />
+        <!--    具体手机号的TextView-->
+        <TextView
+            android:contentDescription="具体手机号"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="21dp"
+            android:text="183****0969"
+            android:textColor="@color/text_search_grey"
+            android:textSize="21sp" />
+
+
+    </RelativeLayout>
+
+    <!--    "手机号"与"微信绑定"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "微信绑定"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <!--    "微信绑定"TextView-->
+        <TextView
+            android:contentDescription="微信绑定文字"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:text="微信绑定"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+        <!--        "微信绑定"的选择按钮ImageView-->
+        <ImageView
+            android:contentDescription="微信绑定开启或关闭按钮"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/button_choose" />
+
+
+    </RelativeLayout>
+
+    <!--    "微信绑定"与"QQ绑定"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "QQ绑定"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <!--    "QQ绑定"TextView-->
+        <TextView
+            android:contentDescription="QQ绑定文字"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="QQ绑定"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+        <!--        "QQ绑定"的选择按钮ImageView-->
+        <ImageView
+            android:contentDescription="QQ绑定开启或关闭按钮"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/button_choose" />
+
+    </RelativeLayout>
+
+    <!--    "QQ绑定"与"账号注销"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:background="@color/divider" />
+
+    <!--    "账号注销"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+
+        <!--    "账号注销"TextView-->
+        <TextView
+            android:contentDescription="帐号注销"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:text="账号注销"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <!--    "账号注销"与"登录设备管理"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "登录设备管理"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <!--    "登录设备管理"TextView-->
+        <TextView
+            android:contentDescription="登录设备管理"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:text="登录设备管理"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <!--    "登录设备管理"下面的View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:background="@color/divider" />
+
+</LinearLayout>

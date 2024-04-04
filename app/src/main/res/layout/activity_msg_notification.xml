@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp">
+
+        <!--    "我的关注"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="42dp"
+            android:text="消息通知"
+            android:textColor="@color/common_text_black"
+            android:textSize="24dp" />
+        <!--    "一键已读"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="269dp"
+            android:layout_marginTop="46dp"
+            android:text="一键已读"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+        <!--    返回箭头-->
+        <ImageView
+            android:id="@+id/return_back"
+            android:layout_width="14dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:orientation="horizontal">
+
+        <!--        "系统消息"根布局RelativeLayout-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--    "系统消息"TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="87dp"
+                android:text="系统消息"
+                android:textColor="@color/common_text_black"
+                android:textSize="16sp" />
+            <!--    "系统消息"ImageView-->
+            <ImageView
+                android:id="@+id/system_msg_image"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/system_msg" />
+
+        </RelativeLayout>
+
+        <!--        "获得的赞"根布局RelativeLayout-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!--    "获得的赞"TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="87dp"
+                android:text="获得的赞"
+                android:textColor="@color/common_text_black"
+                android:textSize="16sp" />
+            <!--    "获得的赞"ImageView-->
+            <ImageView
+                android:id="@+id/like_to_me_image"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/like" />
+
+        </RelativeLayout>
+
+        <!--        "回复我的"根布局RelativeLayout-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <!--    "回复我的"TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="87dp"
+                android:text="回复我的"
+                android:textColor="@color/common_text_black"
+                android:textSize="16sp" />
+            <!--    "回复我的"ImageView-->
+            <ImageView
+                android:id="@+id/comments_to_me_image"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/reply" />
+
+            <!--    "回复我的"右上角代表消息数量的圈圈背景ImageView-->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/notification_amount_circle" />
+            <!--    "回复我的"右上角代表消息数量的数字TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="77dp"
+                android:layout_marginTop="20dp"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!--    分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/divider" />
+    <!--    "消息列表"文字的根布局RelativeLayout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp">
+        <!--        "消息列表"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="消息列表："
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+    <!--下面的消息列表-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="342px">
+        <!--        系统消息头像-->
+        <ImageView
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/system_message" />
+<!--        "系统消息"TextView-->
+        <TextView
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="13dp"
+            android:text="系统消息" />
+        <!--        "用户资料核审通过"TextView-->
+        <TextView
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="69dp"
+            android:text="用户资料核审通过。" />
+        <!--日期-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="283dp"
+            android:layout_marginTop="19dp"
+            android:text="2022-7-1" />
+        <!--    "官方"的CardView-->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginStart="171dp"
+            android:layout_marginTop="19dp"
+            android:id="@+id/login_cardView"
+            android:layout_width="48dp"
+            android:layout_height="22dp"
+            app:cardBackgroundColor="@color/blue_10"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp">
+
+            <!--    官方的RelativeLayout-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--        "官方"TextView-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="官方"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+
+</LinearLayout>

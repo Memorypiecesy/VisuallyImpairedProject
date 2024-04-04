@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="90dp"
+    android:layout_height="90dp">
+
+    <!--    选择图片Activity中单个图片的ImageView-->
+    <ImageView
+        android:id="@+id/choose_photo_image"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/photo_choose_default" />
+    <!--选择图片右上角的按钮-->
+    <ImageView
+        android:id="@+id/choose_photo_button_image"
+        android:src="@drawable/photo_choose_button"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="2dp" />
+
+
+</RelativeLayout>

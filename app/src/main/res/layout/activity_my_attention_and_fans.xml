@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp">
+    
+    <!--    "我的关注"TextView-->
+        <TextView
+            android:id="@+id/my_attention_and_fans_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:contentDescription="我的关注文字"
+            android:text="我的关注"
+            android:textColor="@color/common_text_black"
+            android:textSize="24sp" />
+
+    <!--    返回箭头-->
+        <ImageView
+            android:contentDescription="返回箭头"
+            android:id="@+id/return_back"
+            android:layout_width="14dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+<!--    "我的关注"和下面的RecyclerView的分割线-->
+    <View
+        android:background="@color/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_attention_and_fans_recycler"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>

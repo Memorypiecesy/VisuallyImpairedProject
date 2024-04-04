@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp">
+
+        <!--    "编辑资料"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="42dp"
+            android:text="编辑资料"
+            android:textColor="@color/common_text_black"
+            android:textSize="24sp" />
+
+        <!--    返回箭头-->
+        <ImageView
+            android:id="@+id/return_back"
+            android:layout_width="14dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+
+    <!--    "识别历史"和下面的RecyclerView的分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/divider" />
+    <!--    头像处的根RelativeLayout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp">
+
+<!--        头像的MaterialCardView-->
+        <com.google.android.material.card.MaterialCardView
+            app:cardElevation="0dp"
+            app:cardCornerRadius="50dp"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="56dp"
+            android:layout_width="82dp"
+            android:layout_height="82dp">
+            <!--        "点击更换头像"ImageView-->
+            <ImageView
+                android:id="@+id/change_avatar_image"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:src="@drawable/avatar_change" />
+
+        </com.google.android.material.card.MaterialCardView>
+        <!--"点击更换头像"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="140dp"
+            android:text="点击更换头像"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+<!--"用户名"根布局LinearLayout-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+            <!--            "用户名"TextView-->
+            <TextView
+                android:textSize="21sp"
+                android:text="用户名"
+                android:textColor="@color/common_text_black"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <!--            竖着的分割线-->
+            <View
+                android:layout_marginStart="10dp"
+                android:layout_width="0.1dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:background="@color/divider" />
+
+            <!--    "用户名"EditText-->
+            <EditText
+                android:layout_width="203dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/search_box_background"
+                android:ellipsize="end"
+                android:hint="设置您的用户名"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/text_search_grey"
+                android:textSize="18sp" />
+
+    </LinearLayout>
+    <!--    "用户名"根布局LinearLayout下面的分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/divider" />
+
+    <!--"简介"根布局LinearLayout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+
+            <!--            "简介"TextView-->
+            <TextView
+                android:textSize="21sp"
+                android:text="简介"
+                android:textColor="@color/common_text_black"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <!--            竖着的分割线-->
+            <View
+                android:layout_marginStart="20dp"
+                android:layout_width="0.1dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:background="@color/divider" />
+
+            <!--    "简介"TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="31dp"
+                android:background="@color/search_box_background"
+                android:text="用一句话来介绍自己"
+                android:textColor="@color/text_search_grey"
+                android:textSize="18sp" />
+
+    </LinearLayout>
+    <!--    "简介"根布局LinearLayout下面的分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/divider" />
+
+    <!--"性别"根布局LinearLayout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+
+        <!--            "性别"TextView-->
+        <TextView
+            android:textSize="21sp"
+            android:text="性别"
+            android:textColor="@color/common_text_black"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--            竖着的分割线-->
+        <View
+            android:layout_marginStart="20dp"
+            android:layout_width="0.1dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:background="@color/divider" />
+
+<!--        "性别"修改处可点击跳转范围RelativeLayout-->
+        <RelativeLayout
+            android:id="@+id/gender_pop_relative"
+            android:layout_marginTop="26dp"
+            android:layout_marginStart="13dp"
+            android:layout_width="240dp"
+            android:layout_height="36dp">
+
+            <!--    "性别"修改内容TextView-->
+            <TextView
+                android:id="@+id/gender_choose_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/search_box_background"
+                android:text="不展示"
+                android:textColor="@color/text_search_grey"
+                android:textSize="18sp" />
+<!--            性别处箭头的根布局RelativeLayout-->
+            <RelativeLayout
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="207dp"
+                android:layout_width="33dp"
+                android:layout_height="33dp">
+<!--                性别处的箭头ImageView-->
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/arrow_right"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <!--    "性别"根布局LinearLayout下面的分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/divider" />
+
+    <!--"所在地"根布局LinearLayout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp" >
+
+        <!--            "所在地"TextView-->
+        <TextView
+            android:textSize="21sp"
+            android:text="所在地"
+            android:textColor="@color/common_text_black"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!--            竖着的分割线-->
+        <View
+            android:layout_marginStart="10dp"
+            android:layout_width="1dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:background="@color/divider" />
+
+        <!--    "所在地"TextView-->
+        <TextView
+            android:text="定位中..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="31dp"
+            android:background="@color/search_box_background"
+            android:textColor="@color/text_search_grey"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <!--    "所在地"根布局LinearLayout下面的分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/divider" />
+
+    <!--    "保存"的CardView-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/save_card"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="49dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp">
+
+        <!--    保存的RelativeLayout-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--        "保存"TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

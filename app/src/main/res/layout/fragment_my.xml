@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+    <!--    最外层的RelativeLayout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--        头像的MaterialCardView-->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="90dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp">
+            <!--        "点击更换头像"ImageView-->
+            <ImageView
+                android:id="@+id/user_avatar_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_avatar" />
+
+        </com.google.android.material.card.MaterialCardView>
+        <!--    "昵称"TextView-->
+        <TextView
+            android:id="@+id/user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="85dp"
+            android:text="昵称"
+            android:textColor="@color/common_text_black"
+            android:textSize="24sp" />
+        <!--    "个人简介"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="133dp"
+            android:text="个人简介"
+            android:textColor="@color/text_search_grey"
+            android:textSize="16sp" />
+
+        <!--        &lt;!&ndash;        "修改个人资料"TextView&ndash;&gt;-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/modify_personal_data_text"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="213dp"-->
+        <!--            android:layout_marginTop="112dp"-->
+        <!--            android:src="@drawable/arrow_right"-->
+        <!--            android:text="修改个人资料"-->
+        <!--            android:textSize="16dp" />-->
+
+        <!--        "修改个人资料"的ImageView-->
+        <ImageView
+            android:id="@+id/modify_personal_data_image"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="308dp"
+            android:layout_marginTop="107dp"
+            android:src="@drawable/arrow_right" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginTop="171dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/my_fans_relative"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <!--    "粉丝"数字TextView-->
+                <TextView
+                    android:id="@+id/fans_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:text="0"
+                    android:textColor="@color/common_text_black"
+                    android:textSize="24sp" />
+                <!--    "粉丝"TextView-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="42dp"
+                    android:text="粉丝"
+                    android:textColor="@color/common_text_black"
+                    android:textSize="21sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_attention_relative"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <!--    "关注"数字TextView-->
+                <TextView
+                    android:id="@+id/follow_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="13dp"
+                    android:text="20"
+                    android:textColor="@color/common_text_black"
+                    android:textSize="24sp" />
+                <!--    "关注"TextView-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="42dp"
+                    android:text="关注"
+                    android:textColor="@color/common_text_black"
+                    android:textSize="21sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <!--    中间的分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_marginTop="259dp"
+            android:background="@color/divider" />
+
+        <!--    "消息通知"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="367dp"
+            android:text="消息通知"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+        <!--    "消息通知"ImageView外层的RelativeLayout-->
+        <RelativeLayout
+            android:id="@+id/notification_relative"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="302dp">
+            <!--    "消息通知"ImageView-->
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/notification" />
+            <!--    "消息通知"右上角代表消息数量的圈圈背景ImageView-->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/notification_amount_circle" />
+            <!--    "消息通知"右上角代表消息数量的数字TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="3dp"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <!--    "收藏"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="241dp"
+            android:layout_marginTop="367dp"
+            android:text="收藏"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+        <!--    "收藏"ImageView外层的RelativeLayout-->
+        <RelativeLayout
+            android:id="@+id/collection_relative"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="228dp"
+            android:layout_marginTop="302dp" />
+        <!--    "收藏"ImageView-->
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="238dp"
+            android:layout_marginTop="312dp"
+            android:src="@drawable/collection" />
+
+        <!--    "识别历史"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="500dp"
+            android:text="识别历史"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+
+        <!--    "识别历史"ImageView外层的RelativeLayout-->
+        <RelativeLayout
+            android:id="@+id/recognition_history_relative"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="431dp" />
+
+        <!--    "识别历史"圆圈ImageView-->
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="439dp"
+            android:src="@drawable/recognition_history_circle" />
+        <!--    "识别历史"中间图标ImageView-->
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="451dp"
+            android:src="@drawable/recognition_history_icon" />
+
+        <!--    "浏览历史"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="500dp"
+            android:text="浏览历史"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+        <!--    "浏览历史"ImageView外层的RelativeLayout-->
+        <RelativeLayout
+            android:id="@+id/browse_history_relative"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="229dp"
+            android:layout_marginTop="433dp" />
+        <!--    "浏览历史"ImageView-->
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="238dp"
+            android:layout_marginTop="439dp"
+            android:src="@drawable/browse_history" />
+
+        <!--    "意见反馈"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="639dp"
+            android:text="意见反馈"
+            android:textColor="@color/common_text_black"
+            android:textSize="16sp" />
+        <!--    "意见反馈"ImageView外层的RelativeLayout-->
+        <RelativeLayout
+            android:id="@+id/feed_back_relative"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="591dp" />
+        <!--    "意见反馈"ImageView-->
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="602dp"
+            android:src="@drawable/feed_back" />
+
+        <!--    "设置"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="245dp"
+            android:layout_marginTop="639dp"
+            android:text="设置"
+            android:textColor="@color/common_text_black"
+            android:textSize="16sp" />
+        <!--    "设置"ImageView外层的RelativeLayout-->
+        <RelativeLayout
+            android:id="@+id/settings_relative"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="235dp"
+            android:layout_marginTop="593dp" />
+        <!--    "设置"ImageView-->
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="246dp"
+            android:layout_marginTop="602dp"
+            android:src="@drawable/settings" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

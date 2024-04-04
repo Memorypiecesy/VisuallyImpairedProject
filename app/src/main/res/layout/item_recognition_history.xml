@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/divider"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="234dp">
+
+    <RelativeLayout
+        android:layout_width="328dp"
+        android:layout_height="213dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@color/white">
+<!--        新闻中的图片-->
+        <ImageView
+            android:id="@+id/recognition_history_image"
+            android:layout_width="100dp"
+            android:layout_height="183dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="11dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/recognition_history_default_image" />
+<!--        这次识别结果的名字-->
+        <TextView
+            android:id="@+id/recognition_history_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="126dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:text="识别完成_月_日_时间"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+        <!--        这次识别的内容-->
+        <TextView
+            android:id="@+id/recognition_history_content_text"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="126dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="21dp"
+            android:maxLines="5"
+            android:text="此处展示部分识别的文字，也就是差不多意思意思，上方蓝色部分为该次识别结果的命名，建议双击即可修改，然后大概..."
+            android:textColor="@color/common_text_black"
+            android:textSize="16sp" />
+<!--播放按钮ImageView-->
+        <ImageView
+            android:id="@+id/play_image"
+            android:layout_width="83dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="229dp"
+            android:layout_marginTop="172dp"
+            android:src="@drawable/play_button_recognition_history" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

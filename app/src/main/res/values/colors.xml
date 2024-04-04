@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="pure_black">#000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="white">#FFFFFFFF</color>
+<!--    "热门"新闻的文字颜色-->
+    <color name="hot_article">#D43030</color>
+    <!--    单个新闻详情页的评论右上角CardView颜色-->
+    <color name="singleNews_cardView">#DE3C3C</color>
+<!--    评论主体处的字数TextView颜色-->
+    <color name="comments_body_limit_text">#FA4343</color>
+<!--    搜索框背景的颜色-->
+    <color name="search_box_background">#FAFAFA</color>
+<!--    搜索框editText录音时的背景颜色-->
+    <color name="search_box_edit_background">#969696</color>
+<!--    录音时背景的黑色-->
+    <color name="record_black">#66000000</color>
+<!--    搜索框文字颜色-->
+    <color name="text_search_grey">#808080</color>
+    <color name="voice_white">#F2F2F2</color>
+    <color name="blue">#0E42D2</color>
+    <color name="blue_10">#1A0E42D2</color>
+<!--    一般文本的颜色-->
+    <color name="common_text_black">#383838</color>
+<!--    识别历史页RecyclerView的背景颜色，15%透明度-->
+    <color name="recognition_history_recyclerView_background">#26383838</color>
+<!--    搜索页文本的颜色-->
+    <color name="search_page_text_blue">#2C59D7</color>
+    <!--    单个详情页面倍速TextView的颜色-->
+    <color name="news_detail_text_blue">#3B6FFF</color>
+<!--    分割线View的颜色-->
+    <color name="divider">#E5E5E5</color>
+<!--    一键清除CardView的颜色-->
+    <color name="clear_card_view">#EDF2FF</color>
+<!--    app图标背景的颜色-->
+    <color name="app_icon_background">#345FD8</color>
+<!--    识别历史页左下角和右下角两个icon背景圆圈的颜色-->
+    <color name="identification_page_circle">#E8EFFF</color>
+<!--    发表评论内容那个框上面的分割线-->
+    <color name="comments_divider">#A6A6A6</color>
+<!--    识别结果页点击收藏图标后收藏成功-->
+    <color name="collect_success_text_color">#399A60</color>
+
+
+</resources>

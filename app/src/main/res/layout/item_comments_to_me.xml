@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="14dp">
+
+    <!--作者头像MaterialCardView-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/like_to_me_person_card"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp">
+        <!--        作者头像ImageView-->
+        <ImageView
+            android:id="@+id/comments_to_me_person_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="评论我的人的头像"
+            android:src="@drawable/default_avatar" />
+
+    </com.google.android.material.card.MaterialCardView>
+    <!--"用户昵称"TextView-->
+    <TextView
+        android:id="@+id/comments_to_me_person_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="17dp"
+        android:text="用户昵称"
+        android:textColor="@color/common_text_black"
+        android:textSize="21sp" />
+    <!--"回复了我"TextView-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/comments_to_me_person_name_text"
+        android:text="回复了我"
+        android:textColor="@color/text_search_grey"
+        android:textSize="21sp" />
+    <!--用户回复我的内容TextView-->
+    <TextView
+        android:id="@+id/comments_to_me_content_text"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comments_to_me_person_name_text"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="8dp"
+        android:text="用户输出内容，能说多少也许大概可能也就这个样子不知道看着差不多这样..."
+        android:textColor="@color/common_text_black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

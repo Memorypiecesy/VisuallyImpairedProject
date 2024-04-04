@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/search_page_relative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    返回箭头-->
+    <ImageView
+        android:id="@+id/return_back"
+        android:layout_width="14dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="47dp"
+        android:src="@drawable/back_icon" />
+    <!--    搜索框-->
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardBackgroundColor="@color/search_box_background"
+        android:layout_width="216dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="36dp"
+        app:cardCornerRadius="30dp"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="2dp">
+
+        <RelativeLayout
+            android:id="@+id/search_box_relative"
+            android:layout_width="216dp"
+            android:layout_height="46dp">
+
+            <!--    搜索框中的EditText-->
+            <EditText
+                android:id="@+id/search_page_edit"
+                android:layout_width="138dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/search_box_background"
+                android:ellipsize="end"
+                android:hint="搜索你想要的内容"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/text_search_grey"
+                android:textSize="17sp" />
+
+            <!--    放大镜的图片-->
+            <ImageView
+                android:id="@+id/search_page_magnifying_lens"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/magnifying_lens_black" />
+            <!--            "清空"图标-->
+            <ImageView
+                android:id="@+id/search_page_image_clear"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="13dp"
+                android:src="@drawable/news_search_clear" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--    "历史记录"TextView-->
+    <TextView
+        android:layout_width="73dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="102dp"
+        android:text="历史记录"
+        android:textSize="18sp" />
+    <!--    "搜索"TextView-->
+    <TextView
+        android:id="@+id/search_page_text"
+        android:layout_width="43dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="301dp"
+        android:layout_marginTop="44dp"
+        android:text="搜索"
+        android:textColor="@color/search_page_text_blue"
+        android:textSize="21sp" />
+
+    <!--            "蓝色圆圈"图标-->
+    <ImageView
+        android:id="@+id/record_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginBottom="53dp"
+        android:src="@drawable/circle_blue" />
+    <!--            "语音筛选"图标-->
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="75dp"
+        android:src="@drawable/voice_screening" />
+
+    <!--    录音时的框框上部分-->
+    <ImageView
+        android:id="@+id/record_box_top"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="235dp"
+        android:src="@drawable/voice_load_top" />
+    <!--    录音时的框框下部分-->
+    <ImageView
+        android:id="@+id/record_box_bottom"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginBottom="202dp"
+        android:src="@drawable/voice_load_bottom" />
+    <!--    录音框中间的条条-->
+    <ImageView
+        android:id="@+id/record_box_bar"
+        android:layout_width="171dp"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="282dp"
+        android:src="@drawable/voice_load_bar_black" />
+    <!--    "取消"圆圈-->
+    <ImageView
+        android:id="@+id/cancel_circle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="63dp"
+        android:src="@drawable/circle_black" />
+    <!--    "取消"TextView-->
+    <TextView
+        android:id="@+id/cancel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="28dp"
+        android:text="取消"
+        android:textColor="@color/pure_black"
+        android:textSize="17sp" />
+    <!--    "取消"叉叉-->
+    <ImageView
+        android:id="@+id/cancel_cross"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="84dp"
+        android:src="@drawable/cancel_cross" />
+    <!--    "语音识别中"的RelativeLayout-->
+    <RelativeLayout
+        android:id="@+id/voice_recognition"
+        android:layout_width="162dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="266dp">
+        <!--    "语音识别中"的黑色框框背景-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/voice_recognition_background" />
+        <!--    "语音识别中"的圆形识别进度条-->
+        <ProgressBar
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="35dp"
+            android:indeterminateTint="@color/white" />
+        <!--        "语音识别中"TextView-->
+        <TextView
+            android:layout_width="93dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="118dp"
+            android:text="语音识别中"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="500dp"-->
+    <!--        android:layout_marginTop="133dp" />-->
+</RelativeLayout>

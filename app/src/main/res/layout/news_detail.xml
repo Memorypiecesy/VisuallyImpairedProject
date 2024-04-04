@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--    标题TextView-->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:text="标题XXXXX"
+        android:textColor="@color/common_text_black"
+        android:textSize="29sp" />
+    <!--作者头像MaterialCardView-->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_below="@+id/title_text"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_width="49dp"
+        android:layout_height="49dp">
+        <!--        作者头像ImageView-->
+        <ImageView
+            android:contentDescription="新闻作者头像"
+            android:id="@+id/author_avatar_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:src="@drawable/default_avatar" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--    作者名字TextView-->
+    <TextView
+        android:id="@+id/author_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_text"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="21dp"
+        android:text="报社名字"
+        android:textColor="@color/common_text_black"
+        android:textSize="21sp" />
+    <!--发表时间TextView-->
+    <TextView
+        android:layout_below="@+id/author_name_text"
+        android:id="@+id/post_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="4dp"
+        android:text="2022-5-6"
+        android:textSize="16sp" />
+    <!--浏览量TextView-->
+    <TextView
+        android:id="@+id/view_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author_name_text"
+        android:layout_toEndOf="@+id/post_time_text"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:text="1.3w次浏览"
+        android:textSize="16sp" />
+
+    <!--    "关注"ImageView-->
+    <ImageView
+        android:id="@+id/follow_image"
+        android:layout_width="73dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/title_text"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="37dp"
+        android:src="@drawable/follow_button" />
+<!--    新闻中的唯一图片-->
+    <ImageView
+        android:id="@+id/news_detail_image"
+        android:layout_width="289dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/view_count_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:contentDescription="新闻的图片"
+        android:src="@drawable/default_picture" />
+<!--    对图片的描述-->
+    <TextView
+        android:id="@+id/image_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_detail_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="对图片的描述"
+        android:textSize="13sp" />
+<!--新闻正文-->
+    <TextView
+        android:id="@+id/news_content_text"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_description_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="输入文本"
+        android:textColor="@color/common_text_black"
+        android:textSize="21dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp">
+
+    <!--    标题-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="21dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="疫情散发，政策如何成为企业及时雨？"
+        android:textColor="@color/common_text_black"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="74dp">
+
+        <!--    "热门"标志-->
+        <TextView
+            android:id="@+id/hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门"
+            android:textColor="@color/hot_article"
+            android:textSize="15sp" />
+        <!--    新闻作者-->
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:text="xx新闻"
+            android:textColor="@color/text_search_grey"
+            android:textSize="15sp" />
+        <!--    评论数-->
+        <TextView
+            android:id="@+id/comments_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/author_name"
+            android:text="评论数"
+            android:textColor="@color/text_search_grey"
+            android:textSize="15sp" />
+        <!--    发布时间-->
+        <TextView
+            android:id="@+id/final_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/comments_count"
+            android:text="发布时间"
+            android:textColor="@color/text_search_grey"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

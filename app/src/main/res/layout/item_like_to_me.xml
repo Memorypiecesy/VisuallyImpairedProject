@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="79dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--作者头像MaterialCardView-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/like_to_me_person_card"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="51dp"
+        android:layout_height="51dp">
+        <!--        作者头像ImageView-->
+        <ImageView
+            android:contentDescription="点赞我的人的头像"
+            android:id="@+id/like_to_me_person_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/default_avatar" />
+
+    </com.google.android.material.card.MaterialCardView>
+<!--"用户昵称"TextView-->
+    <TextView
+        android:id="@+id/like_to_me_person_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="77dp"
+        android:text="用户昵称"
+        android:textColor="@color/common_text_black"
+        android:textSize="21sp" />
+    <!--"点赞了我"TextView-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="259dp"
+        android:layout_marginTop="27dp"
+        android:text="点赞了我"
+        android:textColor="@color/text_search_grey"
+        android:textSize="21sp" />
+
+</RelativeLayout>

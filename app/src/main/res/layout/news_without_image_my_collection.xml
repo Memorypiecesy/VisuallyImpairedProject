@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--作者头像MaterialCardView-->
+    <com.google.android.material.card.MaterialCardView
+        app:cardElevation="0dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_width="51dp"
+        android:layout_height="51dp">
+        <!--        作者头像ImageView-->
+        <ImageView
+            android:id="@+id/author_avatar_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/default_avatar" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--    作者名字TextView-->
+    <TextView
+        android:id="@+id/author_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="21dp"
+        android:text="报社名字"
+        android:textColor="@color/common_text_black"
+        android:textSize="21sp" />
+    <!--发表时间TextView-->
+    <TextView
+        android:id="@+id/post_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author_name_text"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="5dp"
+        android:text="2022-5-6"
+        android:textSize="16sp" />
+<!--    播放按钮ImageView-->
+    <ImageView
+        android:src="@drawable/play_button_my_collection"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="236dp"
+        android:layout_width="98dp"
+        android:layout_height="46dp"/>
+    <!--收藏中的新闻标题TextView-->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:text="2022-5-6"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:id="@+id/news_my_collection_linear"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/title_text"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+<!--            转发ImageView-->
+            <ImageView
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/transmit"
+                android:layout_width="27dp"
+                android:layout_height="22dp"/>
+<!--            "分享"TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="9dp"
+                android:text="分享"
+                android:textColor="@color/common_text_black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <!--            评论ImageView-->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/comments" />
+            <!--            评论数TextView-->
+            <TextView
+                android:id="@+id/comments_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="9dp"
+                android:text="1368"
+                android:textColor="@color/common_text_black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <!--            转发ImageView-->
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/like_black" />
+            <!--            "分享"TextView-->
+            <TextView
+                android:id="@+id/like_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="8dp"
+                android:text="1.3万"
+                android:textColor="@color/common_text_black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/recognition_history_recyclerView_background"
+        android:layout_below="@+id/news_my_collection_linear"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</RelativeLayout>

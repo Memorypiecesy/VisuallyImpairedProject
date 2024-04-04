@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="291dp">
+
+        <!--"选择你的性别"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="选择你的性别"
+            android:textColor="@color/common_text_black"
+            android:textSize="24sp" />
+        <!--    "不展示"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="183dp"
+            android:text="不展示"
+            android:textSize="21sp" />
+        <!--    "不展示"ImageView-->
+        <ImageView
+            android:id="@+id/not_show_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="92dp"
+            android:background="@drawable/not_show" />
+        <!--    "女"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="169dp"
+            android:layout_marginTop="183dp"
+            android:text="女"
+            android:textSize="21sp" />
+        <!--    "女"ImageView-->
+        <ImageView
+            android:id="@+id/female_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/female" />
+        <!--    "男"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="293dp"
+            android:layout_marginTop="183dp"
+            android:text="男"
+            android:textSize="21sp" />
+        <!--    "男"ImageView-->
+        <ImageView
+            android:id="@+id/male_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="264dp"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/male" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_below="@+id/not_show_image"
+            android:layout_marginTop="42dp" />
+
+</RelativeLayout>

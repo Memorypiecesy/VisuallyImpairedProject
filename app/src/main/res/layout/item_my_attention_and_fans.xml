@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="79dp">
+
+    <com.example.visuallyimpairedproject.utils.RoundImageView
+        android:id="@+id/author_avatar_image"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/author_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="13dp"
+        android:text="报社名字"
+        android:textColor="@color/common_text_black"
+        android:textSize="21sp" />
+
+</RelativeLayout>

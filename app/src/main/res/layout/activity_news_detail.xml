@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--最上面的根布局RelativeLayout-->
+    <RelativeLayout
+        android:id="@+id/relative_above"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/blue">
+        <!--        返回箭头-->
+        <ImageView
+            android:id="@+id/return_back"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="43dp"
+            android:contentDescription="返回箭头"
+            android:src="@drawable/return_white" />
+
+        <RelativeLayout
+            android:id="@+id/listen_news_above_relative"
+            android:layout_width="114dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="46dp">
+
+            <!--        "听新闻"TextView-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="2dp"
+                android:text="听新闻"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <!--        听新闻ImageView-->
+            <ImageView
+                android:id="@+id/news_listen_image"
+                android:layout_width="25dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="3dp"
+                android:contentDescription="听新闻图标，点我听新闻"
+                android:src="@drawable/news_listen" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="710dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/news_detail_recycler"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp" />
+
+    <!--    下面的点赞收藏icon的根布局RelativeLayout-->
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <!--    "发表看法"的CardView-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/comments_card"
+            android:layout_width="126dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="9dp"
+            app:cardBackgroundColor="@color/text_search_grey"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp">
+
+            <!--    发表看法的RelativeLayout-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--        "发表看法"TextView-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:text="发表看法..."
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+                <!--        "发表看法"ImageView-->
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="17dp"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="11dp"
+                    android:src="@drawable/write_words" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--        "评论"ImageView-->
+        <ImageView
+            android:id="@+id/single_news_comments_image"
+            android:layout_width="29dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="17dp"
+            android:contentDescription="评论图标，点我进行评论"
+            android:src="@drawable/comments" />
+
+        <!--评右上角的评论数MaterialCardView-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/comments_count_card"
+            android:layout_width="22dp"
+            android:layout_height="11dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/singleNews_cardView"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--        评论数TextView-->
+                <TextView
+                    android:id="@+id/comments_count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="111"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--        "点赞"ImageView-->
+        <ImageView
+            android:id="@+id/like_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="212dp"
+            android:layout_marginTop="13dp"
+            android:contentDescription="点赞图标，点我进行点赞"
+            android:src="@drawable/like_black" />
+        <!--        "收藏"ImageView-->
+        <ImageView
+            android:id="@+id/collection_image"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="264dp"
+            android:layout_marginTop="13dp"
+            android:contentDescription="收藏图标，点我收藏该新闻"
+            android:src="@drawable/collection_black" />
+        <!--        "转发"ImageView-->
+        <ImageView
+            android:id="@+id/transmit_image"
+            android:layout_width="29dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="314dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="转发图标，点我转发该新闻"
+            android:src="@drawable/transmit" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--    听新闻框框-->
+    <RelativeLayout
+        android:id="@+id/listen_news_below_relative"
+        android:background="@color/black_80"
+        android:layout_marginTop="535dp"
+        android:layout_width="281dp"
+        android:layout_height="71dp">
+        <!--    上一篇ImageView-->
+        <ImageView
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/previous"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+        <!--    下一篇ImageView-->
+        <ImageView
+            android:layout_marginStart="134dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/next"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+        <!--    暂停和播放ImageView-->
+        <ImageView
+            android:contentDescription="暂停或播放"
+            android:id="@+id/play_image"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="62dp"
+            android:src="@drawable/news_detail_playing" />
+        <!--    倍速RelativeLayout-->
+        <RelativeLayout
+            android:id="@+id/times_speed_relative"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="184dp">
+
+            <!--    "倍速"CardView-->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/times_speed_card"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                app:cardBackgroundColor="@color/identification_page_circle"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="0dp">
+
+                <!--    倍速RelativeLayout-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <!--                    倍速TextView-->
+                    <TextView
+                        android:id="@+id/times_speed_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="1x"
+                        android:textColor="@color/news_detail_text_blue"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+        <!--        取消听新闻框框RelativeLayout-->
+        <RelativeLayout
+            android:id="@+id/cancel_relative"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="242dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/cancel_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cancel_cross" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

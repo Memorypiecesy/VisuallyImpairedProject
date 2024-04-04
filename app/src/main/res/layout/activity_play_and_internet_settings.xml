@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    最上面的"播放与网络设置"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp">
+
+        <!--    "播放与网络设置"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:text="播放与网络设置"
+            android:textColor="@color/common_text_black"
+            android:textSize="24sp" />
+
+        <!--    返回箭头-->
+        <ImageView
+            android:id="@+id/return_back"
+            android:layout_width="14dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+
+    <!--    "播放与网络设置"下面的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+    <!--    "非WLAN网络流量"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp">
+
+        <!--    "非WLAN网络流量"TextView-->
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="19dp"
+            android:text="非WLAN网络流量"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+        <!--    播放效果的TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="157dp"
+            android:layout_marginTop="37dp"
+            android:text="最佳效果(下载大图)"
+            android:textColor="@color/text_search_grey"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <!--    "非WLAN网络流量"与"非WLAN网络播放提醒"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "非WLAN网络播放提醒"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <!--    "非WLAN网络播放提醒"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:text="非WLAN网络播放提醒"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+        <!--    提醒次数的TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="242dp"
+            android:layout_marginTop="15dp"
+            android:text="提醒一次"
+            android:textColor="@color/text_search_grey"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <!--    "非WLAN网络播放提醒"与"频道主动播放视频"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "频道主动播放视频"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <!--    "频道主动播放视频"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:text="频道主动播放视频"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+        <!--        "频道主动播放视频"的选择按钮ImageView-->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/button_choose" />
+
+    </RelativeLayout>
+
+    <!--    "频道主动播放视频"与"非Wi-Fi网络下自动播放视频"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "非Wi-Fi网络下自动播放视频"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <!--    "非Wi-Fi网络下自动播放视频"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:text="非Wi-Fi网络下自动播放视频"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+        <!--        "非Wi-Fi网络下自动播放视频"的选择按钮ImageView-->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/button_choose" />
+
+    </RelativeLayout>
+
+    <!--    "非Wi-Fi网络下自动播放视频"与"使用移动网络改善内容浏览体验"中间的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+    <!--    "使用移动网络改善内容浏览体验"RelativeLayout布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp">
+
+        <!--    "使用移动网络改善内容浏览体验"TextView-->
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="使用移动网络改善内容浏览体验"
+            android:textColor="@color/common_text_black"
+            android:textSize="21sp" />
+        <!--    "如Wi-Fi下网络质量差将使用移动网络来改善"TextView-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="78dp"
+            android:text="如Wi-Fi下网络质量差将使用移动网络来改善"
+            android:textColor="@color/text_search_grey"
+            android:textSize="16dp" />
+        <!--        "用移动网络改善内容浏览体验"的选择按钮ImageView-->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/button_choose" />
+
+    </RelativeLayout>
+
+    <!--    "如Wi-Fi下网络质量差将使用移动网络来改善"下面的分割线View-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/divider" />
+
+
+</LinearLayout>

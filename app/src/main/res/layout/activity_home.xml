@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/home_viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:gravity="bottom">
+
+        <!--        "看新闻"子LinearLayout-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:contentDescription="看新闻图标"
+                android:id="@+id/image_see_news"
+                android:layout_width="30dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/see_news_icon" />
+
+            <TextView
+                android:contentDescription="看新闻文字"
+                android:id="@+id/text_see_news"
+                android:layout_width="38dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="31dp"
+                android:text="看新闻"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <!--        "拍照识图"子LinearLayout-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--                "拍照识图"RelativeLayout-->
+                <RelativeLayout
+                    android:id="@+id/photograph_relative"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:layout_centerHorizontal="true">
+<!--拍照识别的ImageView-->
+                    <ImageView
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/circle_blue"
+                        android:contentDescription="拍照识别按钮，点我进行拍照文字识别" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/camera" />
+
+                    <ImageView
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/magnifying_lens_blue" />
+
+                </RelativeLayout>
+                <!--                "拍照识图"TextView-->
+                <TextView
+                    android:contentDescription="拍照识图文字"
+                    android:id="@+id/text_picture_scan"
+                    android:layout_width="50dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:text="拍照识图"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--        "我的"子LinearLayout-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:contentDescription="我的图标"
+                android:id="@+id/image_user"
+                android:layout_width="22dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/user_icon" />
+
+            <TextView
+                android:contentDescription="我的文字"
+                android:id="@+id/text_user"
+                android:layout_width="25dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:text="我的"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

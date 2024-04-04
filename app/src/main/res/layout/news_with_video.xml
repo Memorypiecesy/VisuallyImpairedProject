@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    标题-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="郑大“校花”找人替核酸，翻墙约会被确诊，为何..."
+        android:textColor="@color/common_text_black"
+        android:textSize="24sp" />
+<!--    播放视频的地方-->
+    <com.google.android.material.card.MaterialCardView
+        app:cardCornerRadius="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:layout_width="328dp"
+        android:layout_height="146dp">
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </com.google.android.material.card.MaterialCardView>
+    <!--    "热门"标志-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="21dp"
+        android:text="热门"
+        android:textColor="@color/hot_article"
+        android:textSize="15sp" />
+    <!--    新闻作者-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="21dp"
+        android:text="xx新闻"
+        android:textColor="@color/text_search_grey"
+        android:textSize="15sp" />
+    <!--    评论数-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="21dp"
+        android:text="评论数"
+        android:textColor="@color/text_search_grey"
+        android:textSize="15sp" />
+    <!--    发布时间-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="21dp"
+        android:text="发布时间"
+        android:textColor="@color/text_search_grey"
+        android:textSize="15sp" />
+</RelativeLayout>
